@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DADADA"
+    tools:context=".seccion_tecnologia">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/portadatec"
+        android:gravity="center"
+        android:text="Tecnologia"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="125dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="110dp"
+        android:elevation="100dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/technology"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal"
+                android:text="Chrome OS ya es el segundo sistema operativo mas usado en el mundo"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:gravity="center_horizontal"
+                android:text="En Febrero de este año el medio norteamericano GeekWire ofreciodatos exclusivos de IDC donde menciono... "
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="8dp"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:gravity="center_horizontal"
+                android:text="by: Unocero.com/8h"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="8dp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/noticiaT"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="330dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/boton_ova"
+        android:elevation="10dp"
+        android:text="Ver"
+        android:textSize="8dp"
+        android:textColor="#000000"
+        app:backgroundTint="#A0EC4A" />
+
+    <Button
+        android:id="@+id/favoritesD"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="328dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/boton_ova"
+        android:elevation="10dp"
+        android:text="add"
+        android:textSize="8dp"
+        android:textColor="#000000"
+        app:backgroundTint="#FF0000" />
+
+</FrameLayout>

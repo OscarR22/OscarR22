@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/buscar">
+
+    <fragment
+        android:id="@+id/buscar"
+        android:name="com.example.lector_rss.Buscar"
+        android:label="fragment_buscar"
+        tools:layout="@layout/fragment_buscar" >
+        <action
+            android:id="@+id/action_buscar_to_seccion_deportes2"
+            app:destination="@id/seccion_deportes" />
+        <action
+            android:id="@+id/action_buscar_to_seccion_tecnologia"
+            app:destination="@id/seccion_tecnologia" />
+        <action
+            android:id="@+id/action_buscar_to_seccion_musica"
+            app:destination="@id/seccion_musica" />
+        <action
+            android:id="@+id/action_buscar_to_busqueda"
+            app:destination="@id/busqueda" />
+    </fragment>
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.example.lector_rss.Inicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/favoritos"
+        android:name="com.example.lector_rss.Favoritos"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+    <fragment
+        android:id="@+id/seccion_deportes"
+        android:name="com.example.lector_rss.seccion_deportes"
+        android:label="fragment_seccion_deportes"
+        tools:layout="@layout/fragment_seccion_deportes" >
+        <action
+            android:id="@+id/action_seccion_deportes_to_noticia_deportes"
+            app:destination="@id/noticia_deportes" />
+        <action
+            android:id="@+id/action_seccion_deportes_to_favoritos"
+            app:destination="@id/favoritos" />
+    </fragment>
+    <fragment
+        android:id="@+id/noticia_deportes"
+        android:name="com.example.lector_rss.noticia_deportes"
+        android:label="fragment_noticia_deportes"
+        tools:layout="@layout/fragment_noticia_deportes" />
+    <fragment
+        android:id="@+id/seccion_tecnologia"
+        android:name="com.example.lector_rss.seccion_tecnologia"
+        android:label="fragment_seccion_tecnologia"
+        tools:layout="@layout/fragment_seccion_tecnologia" >
+        <action
+            android:id="@+id/action_seccion_tecnologia_to_noticia_tecnologia"
+            app:destination="@id/noticia_tecnologia" />
+        <action
+            android:id="@+id/action_seccion_tecnologia_to_favoritos"
+            app:destination="@id/favoritos" />
+    </fragment>
+    <fragment
+        android:id="@+id/seccion_musica"
+        android:name="com.example.lector_rss.seccion_musica"
+        android:label="fragment_seccion_musica"
+        tools:layout="@layout/fragment_seccion_musica" >
+        <action
+            android:id="@+id/action_seccion_musica_to_noticia_musica"
+            app:destination="@id/noticia_musica" />
+        <action
+            android:id="@+id/action_seccion_musica_to_favoritos"
+            app:destination="@id/favoritos" />
+    </fragment>
+    <fragment
+        android:id="@+id/noticia_tecnologia"
+        android:name="com.example.lector_rss.noticia_tecnologia"
+        android:label="fragment_noticia_tecnologia"
+        tools:layout="@layout/fragment_noticia_tecnologia" />
+    <fragment
+        android:id="@+id/noticia_musica"
+        android:name="com.example.lector_rss.noticia_musica"
+        android:label="fragment_noticia_musica"
+        tools:layout="@layout/fragment_noticia_musica" />
+    <fragment
+        android:id="@+id/busqueda"
+        android:name="com.example.lector_rss.busqueda"
+        android:label="fragment_busqueda"
+        tools:layout="@layout/fragment_busqueda" >
+        <action
+            android:id="@+id/action_busqueda_to_noticia_busqueda"
+            app:destination="@id/noticia_busqueda" />
+        <action
+            android:id="@+id/action_busqueda_to_favoritos"
+            app:destination="@id/favoritos" />
+    </fragment>
+    <fragment
+        android:id="@+id/noticia_busqueda"
+        android:name="com.example.lector_rss.noticia_busqueda"
+        android:label="fragment_noticia_busqueda"
+        tools:layout="@layout/fragment_noticia_busqueda" />
+</navigation>

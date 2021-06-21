@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DADADA"
+    tools:context=".busqueda">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/busqueda"
+        android:gravity="center"
+        android:text="Busqueda"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="85dp"
+        android:elevation="100dp"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iconImageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/spoort" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@+id/iconImageView"
+                    android:layout_toRightOf="@+id/iconImageView"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="192dp"
+                    android:layout_height="22dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Titulo de la noticia"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="10dp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/busquedaN"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="275dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/boton_ova"
+        android:elevation="10dp"
+        android:text="Ver"
+        android:textColor="#000000"
+        android:textSize="8dp"
+        app:backgroundTint="#A0EC4A" />
+
+    <Button
+        android:id="@+id/favoritesD"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="330dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/boton_ova"
+        android:elevation="10dp"
+        android:text="add"
+        android:textColor="#000000"
+        android:textSize="8dp"
+        app:backgroundTint="#FF0000" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:id="@+id/lista"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:padding="6dp"/>
+
+
+</FrameLayout>
